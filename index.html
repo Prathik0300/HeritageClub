@@ -11,7 +11,7 @@
         <meta charset="utf-8">
     </head>
     <body>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <a href="index.html">
                     <img src="./assets/images/full logo.webp" alt="logo">
                 </a>
@@ -82,33 +82,127 @@
 
             <!-- ABOUT US DIV -->
 
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-6">
-                    <div id="aboutUs" class="row">
+            <div id="bg-aboutUs" class="container-fluid d-flex flex-column">
+                <div class="row" class="col-lg-12">
+                    <div id="aboutUs" class="col-lg-6">
                         <h2 style="padding-left: 10px;">About us</h2>
                         <div>
                             <div id="quote"><b>
                                 "India is the cradle of the human race, the birthplace of human speech, the mother of history, the grandmother of legend, and the great-grandmother of tradition. Our most valuable and most instructive materials in the history of man are treasured up in India only."
                             </b></div>
-                            <div style="padding-left: 10px;" id="details">
+                            <div style="padding-left: 0px;" id="details">
                                 True to that, India, from time immemorial, a focal point of various religions, multitudinous cultures and admirable grandeur of architecture that has gracefully amalgamated into our rich heritage that we boast of today. Now with the ushering in of the twenty- first century we have forayed into the arena of science, technology, and research. India has also been immensely successful in keeping on par with the world and even taking the driver's seat on a number of occasions. We at the heritage club wish to coalesce these two aspects. Numerous travelers who put afoot on the Indian soil heaped praise pertaining to its abounding architecture. Even the stringent of the British never failed to express their awe. We wish to delve deep into those praises. Our objectives include conducting experiments and tests to unearth the science behind those marvels. We as a club conduct various cultural programs, guest lectures, interactive sessions and hands on workshops to wrest the love for history and heritage. Our club is a rendezvous of like minded enthusiasts who wish to explore our scientific past and unravel the mysteries that the rocks and bricks have concealed beneath them for centuries.
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="col-lg-6">
-                    <div class="row">
+                
+                    <div id="bg-video" class="col-lg-6">
                         <div id="videoContainer">
                             <div class="black"></div>
                             <div class="white"></div>
                             <div id="video">
-                                <iframe src="https://www.youtube.com/watch?v=sf6fUTjAWp0" wmode="Opaque" allow="accelorometer; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                                <iframe src="https://www.youtube.com/watch?v=sf6fUTjAWp0" allow="accelorometer; encrypted-media; gyroscope;"></iframe>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+
+                     <!--What we do div-->
+        
+        <div class="container-fluid mt-4">
+            <div id="activity" class="row">
+                <span>WHAT WE DO</span>
+            </div>
+
+            <div id="activityCard" class="row">
+                <div class="forBorder"> 
+                    <img width="250" height="400" src="./assets/images/exploring.jpg">
+                    <div class="desc">
+                        <span>Exploring</span>
+                    </div>
+                </div>
+                <div class="forBorder">
+                    <img  width="250" height="400" src="./assets/images/find.jpg">
+                    <div class="desc">
+                        <span>Finding</span>
+                    </div>
+                </div>
+                <div class="forBorder">
+                    <img  width="250" height="400" src="./assets/images/give.jpg">
+                    <div class="desc">
+                        <span>Giving</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+                        <!--Events-->
+
+        <div id="eventDiv" class="container-fluid">
+            <div id="events" class="row">
+                <span>EVENTS</span>
+            </div>
+
+            <div class="eventCard row">
+                <div class="eventRow">
+                    <img id="image" class="d-block" src="https://static.wixstatic.com/media/aa45c4_d174102e70b041df8d782bea6a77a8c5~mv2.jpg/v1/crop/x_84,y_0,w_676,h_843/fill/w_324,h_388,al_c,q_80,usm_0.66_1.00_0.01/red%20hc.webp">
+
+                    <div class="eventInfo text-center">
+                        <h2>Club
+                            Core Member 
+                            Recruitment</h2>
+                        <br>
+                        <span>
+                            To all the First and Second Year engineering undergraduates, get a chance to be the part of the HERITAGE CLUB VIT.</span><br>
+                        <button id="knowMore" class="btn mt-5" type="button">KNOW MORE</button>
+                    </div>
+                </div>
+
+                <div class="eventRow">
+                    <img id="image" class="d-block" src="https://static.wixstatic.com/media/aa45c4_e46fd38ab33f4e459238c63bb34d7d38~mv2.jpg/v1/crop/x_340,y_0,w_560,h_699/fill/w_324,h_388,al_c,q_80,usm_0.66_1.00_0.01/111111.webp">
+
+                    <div class="eventInfo text-center">
+                        <h2>Inauguration Ceremony of Heritage Club</h2>
+                        <br>
+                        <span>
+We at Heritage Club welcome you all to the inauguration ceremony of our club.</span><br>
+                        <button id="knowMore" class="btn mt-5" type="button">KNOW MORE</button>
+                    </div>
+                </div>
+
+                <div class="eventRow">
+                    <img id="image" class="d-block" src="https://static.wixstatic.com/media/aa45c4_13a7e33ffe324666ae1ac0f1b46aae70~mv2.jpg/v1/crop/x_0,y_56,w_679,h_847/fill/w_324,h_388,al_c,q_80,usm_0.66_1.00_0.01/hbim.webp">
+
+
+                    <div class="eventInfo text-center">
+                        <h2>Heritage Building Information Modelling</h2>
+                        <br>
+                        <span> 
+Heritage Building Information Modelling (HBIM) is the process of information modelling of complex heritage structures.</span><br>
+                        <button id="knowMore" class="btn mt-5" type="button">KNOW MORE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+                    <!--Contact us-->
+
+        <div id="contactUs" class="container mt-4">
+            <div id="contact" class="row">
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Name" required autofocus>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Email" required autofocus>
+                    </div>
+                    <div id="message" class="form-group">
+                        <input type="text" class="form-control" placeholder="Type your message here..." required autofocus>
+                    </div>
+                    <div class="text-center form-group">
+                        <button class="btn" type="submit">SUBMIT</button>
+                    </div>
+                </form>
             </div>
         </div>
     </body>

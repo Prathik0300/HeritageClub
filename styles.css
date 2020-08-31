@@ -1,4 +1,9 @@
 
+body{
+    cursor: default;
+    background-color: darkslategray;
+    color: white;
+}
 /*****************NAVBAR****************/
 
 div#collapseNav{    
@@ -25,12 +30,12 @@ div#slideImamges div img{
        margin-left: 40rem;
     }
 }
-@media (max-width:1228px){
+@media (max-width:1243px){
     div#collapseNav{    
        margin-left: 37rem;
     }
 }
-@media (max-width:1179px){
+@media (max-width:1196px){
     div#collapseNav{    
        margin-left: 35rem;
     }
@@ -94,7 +99,7 @@ div.wrapper .contents div{
 
 /************carousel media query*****************/
 
-@media(max-width:1210px){
+@media(max-width:1227px){
     div.wrapper .contents div.welcome{
         right: 0;
         padding-left: 39rem;
@@ -160,27 +165,27 @@ div.wrapper .contents div{
 
 
 /****************About us div************************/
-
 div#aboutUs{
     display: flex;
     flex-direction: column;
+    color: white;
 }
 
-div#aboutUs h2{
+div h2{
     padding-top: 4rem;   
 }
 
-div#aboutUs div#quote{
+div#quote{
     text-align: center;
 }
 
-div#aboutUs div#details{
+div#details{
     text-align: justify;
 }
 
 /*******************video container div*************/
 
-div#videoContainer{
+div#bg-video{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -190,9 +195,10 @@ div.black{
     position: absolute;
     top: 13rem;
     left: 4rem;
-    background-color: black;
+    background-color: darkslategray;
     width: 500px;
     height: 250px;
+    opacity: 0.4;
     transform: rotateZ(-10deg);
 }
 
@@ -200,7 +206,8 @@ div.white{
     position: absolute;
     top: 13rem;
     left: 4rem;
-    background-color: red;
+    background-color: white;
+    opacity: 0.4;
     width: 500px;
     height: 250px;
     transform: rotateZ(10deg);
@@ -212,6 +219,11 @@ div#video iframe{
     left: 4rem;
     width: 500px;
     height: 250px;
+}
+
+div#bg-aboutUs{
+    background-color: rgba(0,0,0,0.9);
+    padding-bottom: 2rem;
 }
 
 /***************media query video**********************/
@@ -294,6 +306,13 @@ div#video iframe{
         left: 15rem;
         width: 450px;
     }
+    div#bg-aboutUs{
+        position: relative;
+        padding-bottom: 25rem;
+        background-color: rgba(0,0,0,0.9);
+
+    }
+   
 }
 @media(max-width:960px){
     div.black{
@@ -404,3 +423,200 @@ div#video iframe{
     }
 }
 /**************end of About us div*******************/
+
+
+
+
+
+/****************what we do div**********************/
+
+#activity{
+
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#activity span{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+div#activityCard{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+div#activityCard div.forBorder{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 2rem;
+    border: 1px solid black;
+    cursor: pointer;
+    margin: 2rem;
+}
+
+div#activityCard div.forBorder img{
+    position: relative;
+    
+}
+div#activityCard div.desc{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+@keyframes description{
+    0%{bottom: 0;}
+    100%{bottom: 4.6rem;}
+}
+
+div.forBorder:hover div.desc {
+    animation: description;
+    animation-duration: 0.5s;
+    animation-delay: 0ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+
+@media(max-width:810px){
+    div#activityCard{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+}
+/*******************end of what we do*******************/
+
+/********************event div*****************/
+div#eventDiv{
+    margin-top: 10rem;
+}
+
+div#events{
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 5rem;
+}
+
+#events span{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+div.eventCard{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+div.eventRow img{
+    border: 1px solid black;
+    
+}
+
+div.eventRow{
+    height: 400px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+div.eventInfo{
+    position: relative;
+    width: 300px;
+    bottom: 3rem;
+    padding-left: 1rem;
+    transition: 0.3s ease-in-out;
+}
+
+div.eventInfo button{
+    border: 1px solid white;
+    font-weight: bold;
+    color: white;
+    transition: 0.5s ease-in-out;
+    
+}
+
+div.eventRow:hover div.eventInfo{
+    bottom: 25rem;
+}
+div.eventRow:hover{
+    border: 1px solid black;
+    background-image: linear-gradient(black,transparent);
+}
+div.eventRow:hover img#image{
+    visibility: hidden;
+    opacity: 0.5;
+}
+div.eventInfo button:hover{
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+}
+
+@media(max-width:1097px){
+    div.eventCard{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+/*********************Contact us************************/
+div#contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3rem;
+}
+
+div#contactUs{
+    max-width: 100%;
+    background-color: black;
+}
+
+div#contact form div input{
+    width: 700px;
+    border-radius: 1.2rem;
+}
+div#contact form div#message input{
+    height: 100px;
+}
+div#contact form div button{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    background-color: rgba(0,0,0,0.9);
+    border: 1px solid white;
+    font-weight: bold;
+    color: white;
+}
+div#contact form div button:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+    transition-delay: 0ms;
+    
+}
