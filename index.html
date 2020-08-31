@@ -19,7 +19,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div style="float: right;" class="collapse navbar-collapse" id="collapseNav">
+                <div class="collapse navbar-collapse" id="collapseNav">
                     <ul class="navbar-nav">
                         <li class="nav-item active">
                             <a class="nav-link" href="#">Home</a>
@@ -39,5 +39,77 @@
                     </ul>
                 </div>
             </nav>
+                    
+                        <!-- CAROUSEL DIV-->
+
+            <div class="carousel slide" id="slides" data-ride="carousel">
+
+                <ul class="carousel-indicators">
+                    <li data-target="#slides" data-slide-to="0" class="active"></li>
+                    <li data-target="#slides" data-slide-to="1"></li>
+                    <li data-target="#slides" data-slide-to="2"></li>
+                    <li data-target="#slides" data-slide-to="3"></li>
+                </ul>
+
+                <div id="slideImages" class="carousel-inner">
+                    <div id="firstPic" class="carousel-item active">
+                        <div class="wrapper">
+                            <img class="d-block w-100" height="500" src="./assets/images/rajasthan.jpg">
+                            <div class="contents">
+                                <div class="welcome">WELCOME TO HERITAGE CLUB</div>
+                                <div>United in Hope, Joined in Faith</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item ">
+                        <img class="d-block w-100" src="./assets/images/jaipur fort.jpg" height="500">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="./assets/images/temples.jpg" height="500">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="./assets/images/sanchi stupa.jpg" height="500">
+                    </div>
+                </div>
+
+                <a class="carousel-control-prev" data-target="#slides" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" data-target="#slides" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+
+            <!-- ABOUT US DIV -->
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6">
+                    <div id="aboutUs" class="row">
+                        <h2 style="padding-left: 10px;">About us</h2>
+                        <div>
+                            <div id="quote"><b>
+                                "India is the cradle of the human race, the birthplace of human speech, the mother of history, the grandmother of legend, and the great-grandmother of tradition. Our most valuable and most instructive materials in the history of man are treasured up in India only."
+                            </b></div>
+                            <div style="padding-left: 10px;" id="details">
+                                True to that, India, from time immemorial, a focal point of various religions, multitudinous cultures and admirable grandeur of architecture that has gracefully amalgamated into our rich heritage that we boast of today. Now with the ushering in of the twenty- first century we have forayed into the arena of science, technology, and research. India has also been immensely successful in keeping on par with the world and even taking the driver's seat on a number of occasions. We at the heritage club wish to coalesce these two aspects. Numerous travelers who put afoot on the Indian soil heaped praise pertaining to its abounding architecture. Even the stringent of the British never failed to express their awe. We wish to delve deep into those praises. Our objectives include conducting experiments and tests to unearth the science behind those marvels. We as a club conduct various cultural programs, guest lectures, interactive sessions and hands on workshops to wrest the love for history and heritage. Our club is a rendezvous of like minded enthusiasts who wish to explore our scientific past and unravel the mysteries that the rocks and bricks have concealed beneath them for centuries.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div id="videoContainer">
+                            <div class="black"></div>
+                            <div class="white"></div>
+                            <div id="video">
+                                <iframe src="https://www.youtube.com/watch?v=sf6fUTjAWp0" wmode="Opaque" allow="accelorometer; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
