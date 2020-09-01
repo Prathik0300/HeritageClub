@@ -3,15 +3,18 @@
     <head>
         <title>Heritage| Heritage club| VIT</title>
         <link rel="stylesheet" href="./css/bootstrap.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="./styles.css">
+        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
         <script src="./js/bootstrap.js"></script>
+        <script src="./script.js"></script>
         <meta charset="utf-8">
     </head>
     <body>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
                 <a href="index.html">
                     <img src="./assets/images/full logo.webp" alt="logo">
                 </a>
@@ -22,19 +25,19 @@
                 <div class="collapse navbar-collapse" id="collapseNav">
                     <ul class="navbar-nav">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Home</a>
+                            <a class="nav-link" id="nav-home" href="#">Home</a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Team</a>
+                            <a class="nav-link" id="nav-team" href="#">Team</a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">About Us</a>
+                            <a class="nav-link" id="nav-about" href="#">About Us</a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Events</a>
+                            <a class="nav-link" id="nav-event" href="#">Events</a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Contact Us</a>
+                            <a class="nav-link" id="nav-contact" href="#">Contact Us</a>
                         </li>
                     </ul>
                 </div>
@@ -80,6 +83,11 @@
                 </a>
             </div>
 
+            <!--Scroll to top-->
+
+            <div style="display: none;" onclick="goUp()" id="up">
+                <i class="fa fa-arrow-up"></i>
+            </div>
             <!-- ABOUT US DIV -->
 
             <div id="bg-aboutUs" class="container-fluid d-flex flex-column">
@@ -110,33 +118,7 @@
 
                      <!--What we do div-->
         
-        <div class="container-fluid mt-4">
-            <div id="activity" class="row">
-                <span>WHAT WE DO</span>
-            </div>
-
-            <div id="activityCard" class="row">
-                <div class="forBorder"> 
-                    <img width="250" height="400" src="./assets/images/exploring.jpg">
-                    <div class="desc">
-                        <span>Exploring</span>
-                    </div>
-                </div>
-                <div class="forBorder">
-                    <img  width="250" height="400" src="./assets/images/find.jpg">
-                    <div class="desc">
-                        <span>Finding</span>
-                    </div>
-                </div>
-                <div class="forBorder">
-                    <img  width="250" height="400" src="./assets/images/give.jpg">
-                    <div class="desc">
-                        <span>Giving</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-                        <!--Events-->
+                <!--Events-->
 
         <div id="eventDiv" class="container-fluid">
             <div id="events" class="row">
@@ -174,7 +156,7 @@ We at Heritage Club welcome you all to the inauguration ceremony of our club.</s
                     <img id="image" class="d-block" src="https://static.wixstatic.com/media/aa45c4_13a7e33ffe324666ae1ac0f1b46aae70~mv2.jpg/v1/crop/x_0,y_56,w_679,h_847/fill/w_324,h_388,al_c,q_80,usm_0.66_1.00_0.01/hbim.webp">
 
 
-                    <div class="eventInfo text-center">
+                    <div class="eventInfo lastEvent text-center">
                         <h2>Heritage Building Information Modelling</h2>
                         <br>
                         <span> 
@@ -188,21 +170,52 @@ Heritage Building Information Modelling (HBIM) is the process of information mod
                     <!--Contact us-->
 
         <div id="contactUs" class="container mt-4">
+            <div class="row ml-3 pt-2">
+                <h1>Contact us</h1>
+            </div>
             <div id="contact" class="row">
-                <form>
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Name" required autofocus>
+                <div id="enquiryMail">
+                    <i class="fa fa-envelope"></i>
+                    <div id="queries">
+                        <span>For Queries</span>
+                        <span><a href="mailto:abc@gmail.com">queries@heritage.in</a></span>
                     </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Email" required autofocus>
+                </div>
+
+                <div id="enquiryMail">
+                    <i class="fa fa-envelope"></i>
+                    <div id="queries">
+                        <span>Projects</span>
+                        <span><a href="mailto:abc@gmail.com">projects@heritage.in</a></span>
                     </div>
-                    <div id="message" class="form-group">
-                        <input type="text" class="form-control" placeholder="Type your message here..." required autofocus>
+                </div>
+
+                <div id="enquiryMail">
+                    <i class="fa fa-envelope"></i>
+                    <div id="queries">
+                        <span>Events</span>
+                        <span><a href="mailto:abc@gmail.com">events@heritage.in</a></span>
                     </div>
-                    <div class="text-center form-group">
-                        <button class="btn" type="submit">SUBMIT</button>
-                    </div>
-                </form>
+                </div>
+            </div>
+
+            <div id="logo" class="row">
+                <img src="./assets/images/full logo.webp">
+                <div id="clubName">
+                    THE HERITAGE CLUB, VIT VELLORE
+                </div>
+            </div>
+
+            <div id="socialMedia">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+            </div>
+
+            <div class="copyright mt-5">
+                Copyright &copy; @2020 All rights reserved | <a id="owner" href="#">  Prathik Pugazhenthi</a>
             </div>
         </div>
     </body>

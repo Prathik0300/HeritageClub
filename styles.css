@@ -1,8 +1,26 @@
-
+html{
+    scroll-behavior: smooth;
+}
 body{
     cursor: default;
     background-color: darkslategray;
     color: white;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: darkgray;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: grey;
 }
 /*****************NAVBAR****************/
 
@@ -16,12 +34,26 @@ div#slideImamges div img{
     max-width: 100%;
     max-height: 100%;
 }
+.nav-link{
+    color: rgba(255,255,255,0.5) !important;
+}
+
+.nav-link:hover{
+    color: white !important;
+}
+
 
 /************NAVBAR media query****************/
 
-@media (max-width:1310px){
+@media (max-width:1324px){
     div#collapseNav{    
        margin-left: 42rem;
+    }
+}
+
+@media (max-width:1276px){
+    div#collapseNav{    
+       margin-left: 40rem;
     }
 }
 
@@ -30,6 +62,7 @@ div#slideImamges div img{
        margin-left: 40rem;
     }
 }
+
 @media (max-width:1243px){
     div#collapseNav{    
        margin-left: 37rem;
@@ -40,24 +73,34 @@ div#slideImamges div img{
        margin-left: 35rem;
     }
 }
+@media (max-width:1164px){
+    div#collapseNav{    
+       margin-left: 34rem;
+    }
+}
 @media (max-width:1147px){
     div#collapseNav{    
        margin-left: 33rem;
     }
 }
-@media (max-width:1114px){
+@media (max-width:1132px){
     div#collapseNav{    
        margin-left: 31rem;
     }
 }
-@media (max-width:1083px){
+@media (max-width:1100px){
     div#collapseNav{    
        margin-left: 28rem;
     }
 }
-@media (max-width:1035px){
+@media (max-width:1052px){
     div#collapseNav{    
        margin-left: 25rem;
+    }
+}
+@media (max-width:1003px){
+    div#collapseNav{    
+       margin-left: 23rem;
     }
 }
 @media (max-width:991px){
@@ -87,6 +130,7 @@ div.wrapper .contents{
 }
 
 div.wrapper .contents div.welcome{
+    padding-top: 2rem;
     right: 0;
     padding-left: 40rem;
     font-size: 2.5rem;
@@ -506,7 +550,7 @@ div.forBorder:hover div.desc {
 
 /********************event div*****************/
 div#eventDiv{
-    margin-top: 10rem;
+    margin-top: 5rem;
 }
 
 div#events{
@@ -537,9 +581,12 @@ div.eventRow img{
 }
 
 div.eventRow{
-    height: 400px;
+    border: 1px solid black;
+    height: 380px;
     overflow: hidden;
     cursor: pointer;
+    border-radius: 2rem;
+    margin: 1rem;
 }
 
 div.eventInfo{
@@ -560,6 +607,9 @@ div.eventInfo button{
 
 div.eventRow:hover div.eventInfo{
     bottom: 25rem;
+}
+div.eventRow:hover div.lastEvent{
+    bottom: 26rem;
 }
 div.eventRow:hover{
     border: 1px solid black;
@@ -585,38 +635,149 @@ div.eventInfo button:hover{
 /*********************Contact us************************/
 div#contact{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
     padding-top: 3rem;
+    padding-left: 3rem;
 }
 
 div#contactUs{
     max-width: 100%;
-    background-color: black;
+    background-color: black ;
+}
+div#contact i{
+    font-size: 2rem;
+    border-radius: 50%;
+    padding: 0.6rem;
+    border: 1px solid white;
+}
+div#enquiryMail{
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+}
+div#queries{
+    margin-top: -0.1rem;
+    margin-left: 1.5rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+div#queries a{
+    font-weight: bold;
+    text-decoration: none;
+    color: rgba(255,255,255,0.5);
+    transition: 0.3s ease-in-out;
+
 }
 
-div#contact form div input{
-    width: 700px;
-    border-radius: 1.2rem;
+div#logo{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-div#contact form div#message input{
-    height: 100px;
+
+.fa-envelope{
+    transition: 0.3s ease-in-out;
 }
-div#contact form div button{
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    background-color: rgba(0,0,0,0.9);
-    border: 1px solid white;
-    font-weight: bold;
-    color: white;
-}
-div#contact form div button:hover{
+
+@keyframes logo{
+    0%{background-color: black; color: white;}
+    100%{background-color: white; color: black;}
+} 
+.fa-envelope:hover{
     background-color: white;
     color: black;
-    border: 1px solid black;
-    transition-timing-function: ease-in-out;
-    transition-duration: 0.5s;
-    transition-delay: 0ms;
-    
+}
+div#queries a:hover{
+    color: white;
+}
+div#enquiryMail:hover{
+    cursor: pointer;
+}
+div#enquiryMail:hover .fa-envelope{
+    color: black;
+    background-color: white;
+}
+div#enquiryMail:hover div#queries a{
+    color: white;
+}
+
+div#clubName{
+    font-weight: bold;
+}
+
+div#socialMedia{
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+div#socialMedia a{
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+    text-decoration: none;
+    color: white;
+    border-radius: 50%;
+    border: 2px solid white;
+    transition: 0.3s ease-in-out;
+}
+
+div#socialMedia a i{
+    font-size: 1.5rem;
+}
+
+div#socialMedia a:hover{
+    background-color: white;
+    color: black;
+}
+div.copyright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.copyright a{
+    text-decoration: none;
+    color: rgba(255,255,255,0.5);
+}
+
+
+
+
+
+
+
+/*****************UP ARROW**********************/
+
+#up{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    border: 2px solid white;
+    bottom: 2%;
+    right: 0.5%;
+    z-index: 99;
+}
+
+#up i{
+    color: white;
+    font-size: 35px;
+    justify-content: center;
+    align-items: center;
+}
+#up:hover{
+    cursor: pointer;
+    background-color: white;
+    transition: 0.3s ease-in-out;
+}
+#up:hover i{
+    color: black;
 }
