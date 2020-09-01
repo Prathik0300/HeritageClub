@@ -3,7 +3,7 @@ html{
 }
 body{
     cursor: default;
-    background-color: darkslategray;
+    background-color: rgba(0,0,0,0.9);
     color: white;
 }
 
@@ -35,6 +35,7 @@ div#slideImamges div img{
     max-height: 100%;
 }
 .nav-link{
+    cursor: pointer;
     color: rgba(255,255,255,0.5) !important;
 }
 
@@ -469,85 +470,6 @@ div#bg-aboutUs{
 /**************end of About us div*******************/
 
 
-
-
-
-/****************what we do div**********************/
-
-#activity{
-
-    display: flex;
-    flex-direction: row;
-    align-self: center;
-    align-items: center;
-    justify-content: center;
-}
-
-#activity span{
-    font-size: 2rem;
-    font-weight: bold;
-}
-
-div#activityCard{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
-
-div#activityCard div.forBorder{
-    display: flex;
-    flex-direction: column;
-    height: 400px;
-    overflow: hidden;
-    border-radius: 2rem;
-    border: 1px solid black;
-    cursor: pointer;
-    margin: 2rem;
-}
-
-div#activityCard div.forBorder img{
-    position: relative;
-    
-}
-div#activityCard div.desc{
-    background-color: black;
-    color: white;
-    padding: 20px;
-    position: relative;
-    text-align: center;
-    font-weight: bold;
-    font-size: 1.4rem;
-}
-
-@keyframes description{
-    0%{bottom: 0;}
-    100%{bottom: 4.6rem;}
-}
-
-div.forBorder:hover div.desc {
-    animation: description;
-    animation-duration: 0.5s;
-    animation-delay: 0ms;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: 1;
-    animation-direction: normal;
-    animation-fill-mode: forwards;
-    animation-play-state: running;
-}
-
-@media(max-width:810px){
-    div#activityCard{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        
-    }
-    
-}
-/*******************end of what we do*******************/
-
 /********************event div*****************/
 div#eventDiv{
     margin-top: 5rem;
@@ -670,6 +592,18 @@ div#queries a{
     transition: 0.3s ease-in-out;
 
 }
+
+@media(max-width:930px){
+    div#contact{
+        flex-direction: column;
+    }
+    div#enquiryMail{
+        margin-top: 2rem;
+    }
+}
+
+
+/*************************logo********************/
 
 div#logo{
     margin-top: 4rem;
