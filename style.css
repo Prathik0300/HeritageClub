@@ -1,0 +1,368 @@
+/* body{
+    background-image:url("bluebgc.jpg");
+    width:"100%";
+    height:"100px";
+    position:absolute;
+}
+.logo{
+    position: fixed;
+    left:30px;
+    top:30px;
+}
+.menu{
+    display: block;
+    position: fixed;
+    right: 170px;
+    top: 32px;
+    height: 42px;
+    width: 42px;
+    line-height: 42px;
+    font-family:"montserrat-regular,sans-serif";
+    text-decoration: uppercase;
+    font-size: 30px;
+    letter-spacing: 0.2rem;
+    color: rgba(255,255,255);
+    border:"1px";
+}    
+.menu-icon{
+    display: block;
+    position: fixed;
+    right: 55px;
+    top: 32px;
+    height: 42px;
+    width: 42px;
+    } */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#background{
+    width: 100%;
+    height: 130vh;
+    background-image: url("./assets/setu-chhaya-4hlgFBv6IrM-unsplash.jpg");
+    background-color: rgba(255,255,255,0.3);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/**********************Hamburger icon****************/
+#toggleWrapper{
+    position: fixed;
+    width: 100px;
+    height: 50px;
+    z-index: 25;
+    /* background-color: aquamarine; */
+    /* cursor: pointer; */
+}
+
+#toggleButton{
+    position: fixed;
+    width: 50px;
+    height: 21px;
+    cursor: pointer; 
+    z-index: 25;
+    -webkit-transition: ease-in-out .2s;
+}
+
+#toggleButton #hamburger{
+    z-index: 25;
+    position: absolute;
+    height: 4px;
+    width: 20px;
+    top: 10px;
+    left: 105px;
+    background-color: white;
+    border-radius: 20px;
+    -webkit-transition: ease-in-out .1s;
+}
+
+#hamburger::before,
+#hamburger::after{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 4px;
+    background-color: white;
+    -webkit-transition: ease-in-out .5s;
+}
+
+#hamburger::after{
+    top: -6px;
+}
+
+#hamburger::before{
+    top: 6px;
+}
+
+#toggleButton.active #hamburger{
+    background-color: transparent;
+}
+#toggleButton.active #hamburger::before
+{
+    transform: rotate(-45deg);
+    top: 0;
+}
+#toggleButton.active #hamburger::after{
+    transform: rotate(45deg);
+    top: 0;
+}
+
+#menu_div{
+    width: 130px;
+    height: 35px;
+    padding-right: -10px;
+    padding: 5px;
+    display:block;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+    position:fixed;
+    right:30px;
+    top:50px;
+    z-index: 25;
+}
+
+
+/**********************Social Media Handles****************/
+#social_media_handles{
+ position: relative; 
+ top: 390px;  
+ left: -120px;
+}
+
+#social_media_handles::before{
+    content: '';
+    background-color: rgba(255,255,255,0.5);
+    width: 2px;
+    height: 50px;
+    position: absolute;
+    top: -60px;
+    left: 10px;
+}
+
+#social_media_handles ul{
+    list-style: none;
+}
+
+#social_media_handles i{
+    color: white;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+/**********************Slide Navbar****************/
+
+#slide_nav{
+    position: fixed;
+    list-style: none;
+    height: 100vh;
+    width: 20%;
+    right: 0;
+    z-index: 22;
+    -webkit-transition: ease-in-out 0.8s;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.hide{
+    -webkit-transition-delay: 0ms;
+    -webkit-transition: ease-in-out 0.8s;
+    display: none;
+}
+
+#slide_nav li{
+    cursor: pointer;
+    position: relative;
+    font-weight: bold;
+    top:95px;
+    left: 50px;
+    margin-top: 30px;
+    color: rgba(255,255,255,1);
+    font-size: 1.2rem;
+    -webkit-transition: ease-in-out 0.5s;
+}
+
+#slide_nav li a{
+    text-decoration: none;
+    color: rgba(255,255,255,0.4);
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+#slide_nav li:hover{
+    color: white;
+}
+
+#slide_nav li a:hover{
+    color: rgba(255,255,255,1);
+}
+
+#slide_nav.active{
+    animation: slideOut 0.5s ease-in-out 0s 1 forwards;
+}
+
+@-webkit-keyframes slideOut{
+    0%{right: -885px;}
+    100%{right: 0;}
+}
+
+/*****************Club tagline and explore************/
+#club_info{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    top: -20px;
+    font-size:1.8rem ;
+    color: white;  
+}
+
+#club_info div{
+    margin-top: 5px;
+}
+
+/*************Explore button********************/
+
+.my-btn{
+    position: relative;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease-in-out;
+}
+
+.my-btn:hover{
+    transform: rotateX(-90deg);
+}
+
+.side{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.2rem;
+    padding-top: 8px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+
+.default-side{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    max-width: 100%;
+    max-height: 100%;
+    color: rgb(28,12,53);
+    border: 2px solid rgb(28,12,53);
+    background-color: blueviolet;
+    transform: translateZ(25px);
+}
+
+
+.hover-side{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    max-height: 100%;
+    cursor: pointer;
+    background-color: rgb(28,12,53);
+    color: #fff;
+    border-width: 2px;
+    border-color: rgb(28,12,53);
+    transform: rotateX(90deg) translateZ(25px);
+}
+
+
+/**********************Media Queries****************/
+@media(max-width:1050px){
+    #slide_nav{
+        width: 25%;
+    }
+
+    #social_media_handles i{
+        font-size: 25px;
+    }
+
+
+    #social_media_handles::before{
+        height: 40px;
+        top: -50px;
+    }
+
+    #club_info{
+        font-size:1.6rem ;
+    }
+
+}
+
+@media(max-width:952px){
+    #slide_nav{
+        width: 30%;
+    }
+}
+@media(max-width:800px){
+    #slide_nav{
+        width: 35%;
+    }
+
+    #club_info{
+        font-size:1.3rem ;
+        font-weight: bolder;
+    }
+
+}
+@media(max-width:670px){
+    #slide_nav{
+        width: 40%;
+    }
+
+    #social_media_handles i{
+        font-size: 20px;
+    }
+
+
+    #social_media_handles::before{
+        height: 35px;
+        top: -40px;
+        left: 8px;
+    }
+}
+
+@media(max-width:540px){
+    #slide_nav{
+        width: 45%;
+    }
+}
+@media(max-width:405px){
+    #menu_name{
+        display: none;
+    }
+
+    #menu_div{
+        width: 60px;
+        height: 35px;
+    }
+
+    #toggleButton #hamburger{
+        top: 10px;
+        left: 45px;   
+    }
+}
+
