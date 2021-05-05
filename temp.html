@@ -1,132 +1,165 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Heritage Club|Vit Vellore</title>
-        <link rel="stylesheet" href="./bootstrap/bootstrap-4.4.1-dist/css/bootstrap.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Heritage Club | Vit Vellore</title>
+<!-- 
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous"> -->
+
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
         <link rel="stylesheet" href="./styles.css">
+
+        <script src="https://kit.fontawesome.com/49d21fbf42.js" crossorigin="anonymous"></script>
+        
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     </head>
 
     <body>
-        <div id="Landing-wrapper">
-            <div id="Club-logo">
-                <a href="./temp.html">
-                    <img src="./assets/hclogoo.png" width="120" height="120" alt="Heritage club logo">
-                </a>
-            </div>
 
-            <div id="menu_div">
-                <div id="toggleWrapper">
-                    <div id="toggleButton" class="isActive" style="background-color: transparent;">
-                        <div id="hamburger" ></div>
+        <!-- Landing Wrapper -->
+
+        <div id="Landing-wrapper">
+            <div id="Landing-overlay">
+
+                <div id="Club-logo">
+                    <a href="./temp.html">
+                        <img src="./assets/hclogoo.png" width="120" height="120" alt="Heritage club logo">
+                    </a>
+                </div>
+    
+                <div id="menu_div">
+                    <div id="toggleWrapper">
+                        <div id="toggleButton" class="isActive" style="background-color: transparent;">
+                            <div id="hamburger" ></div>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div id="club_info">
-                <div>
-                    <h2>
-                        Ideate. Innovate. Accuate.
-                    </h2>
+    
+                <!-- CLUB INFO -->
+    
+                <div id="club_info">
+                    <div data-aos="fade-up">
+                        <h2>
+                            Inherit The Heritage.
+                        </h2>
+                    </div>
+                    <div data-aos="fade-up">
+                        <h1>
+                            Heritage Club
+                        </h1>
+                    </div>
+                    <div data-aos="fade-up">
+                        <h1>
+                            VIT Vellore
+                        </h1>
+                    </div>
                 </div>
-                <div>
-                    <h1>
-                        Heritage Club
-                    </h1>
+    
+                <!-- EXPLORE BUTTON -->
+    
+                <div id="Explore_btn_div">
+                    <a href="#AboutUs">
+                        <div onclick="scroll()"  class="my-btn">
+                            <div id="Explore" class="side pro-side default-side">EXPLORE</div>
+                            <div  class="side pro-side hover-side">EXPLORE</div>
+                        </div>
+                    </a>
                 </div>
-                <div>
-                    <h1>
-                        VIT Vellore
-                    </h1>
+    
+                <!-- SOCIAL MEDIA HANDLES -->
+    
+                <div id="social_media_handles">
+                    <ul>
+                        <li>
+                            <a href="https://www.instagram.com/heritageclubvit" target="_blank"><i class="fa fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/heritageclubvit" target="_blank"><i class="fa fa-facebook-square"></i></li>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/company/heritage-club-vit/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+                        </li>
+                    </ul>
                 </div>
-            </div>
-
-            <div id="Explore_btn_div">
-                <div class="my-btn">
-                    <div class="side pro-side default-side">EXPLORE</div>
-                    <div class="side pro-side hover-side">EXPLORE</div>
+    
+                <!-- SLIDE NAV -->
+    
+                <div id="slide_nav_div" class="hide">
+                    <ul id="slide_nav">
+                        <li style="cursor:default;">
+                            <h1>Heritage.</h1>
+                        </li>
+                        <li>
+                            <a href="#AboutUs">About</a>
+                        </li>
+                        <li>
+                            <a href="#Event_Wrapper">Events</a>
+                        </li>
+                        <li>
+                            <a href="#Gallery_Wrapper">Gallery</a>
+                        </li>
+                        <li>
+                            <a href="#Board_Wrapper">Board</a>
+                        </li>
+                        <li>
+                            <a href="#footer">Contact Us</a>
+                        </li>
+                    </ul>
                 </div>
-            </div>
 
-            <div id="social_media_handles">
-                <ul>
-                    <li>
-                        <a href="#"><i class="fa fa-instagram"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-facebook-square"></i></li>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-linkedin-square"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-twitter"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-youtube-play"></i></a>
-                    </li>
-                </ul>
-            </div>
-
-            <div id="slide_nav_div" class="hide">
-                <ul id="slide_nav">
-                    <li style="cursor:default;">
-                        <h3>Heritage.</h3>
-                    </li>
-                    <li>
-                        <a href="#">About</a>
-                    </li>
-                    <li>
-                        <a href="#">Events</a>
-                    </li>
-                    <li>
-                        <a href="#">Gallery</a>
-                    </li>
-                    <li>
-                        <a href="#">Board</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact Us</a>
-                    </li>
-                </ul>
             </div>
         </div>
 
 
+        <!-- SCROLL TO TOP -->
+
+        <div style="display: none;" onclick="goUp()" id="up">
+            <i id="upArrow" class="fa fa-arrow-up"></i>
+        </div>
 
         <!-- ABOUT US DIV -->
 
         <div id="AboutUs">
-            <h2 id="AboutUsTitle">
+            <h2 data-aos="fade-up" id="AboutUsTitle">
                 ABOUT US
             </h2>
-            <div id="AboutUsContent">
-                <div id="Quote">
+            <div  id="AboutUsContent">
+                <div data-aos="fade-up" id="Quote">
                 <b>
                     "India is the cradle of the human race, the birthplace of human speech, the mother of history, the grandmother of legend, and the great-grandmother of tradition. Our most valuable and most instructive materials in the history of man are treasured up in India only."
                 </b>
                 </div>
-                <div id="Content">
+                <div data-aos="fade-up" id="Content">
                     True to that, India, from time immemorial, a focal point of various religions, multitudinous cultures and admirable grandeur of architecture that has gracefully amalgamated into our rich heritage that we boast of today. Now with the ushering in of the twenty- first century we have forayed into the arena of science, technology, and research. India has also been immensely successful in keeping on par with the world and even taking the driver's seat on a number of occasions. We at the heritage club wish to coalesce these two aspects. Numerous travelers who put afoot on the Indian soil heaped praise pertaining to its abounding architecture. Even the stringent of the British never failed to express their awe. We wish to delve deep into those praises. Our objectives include conducting experiments and tests to unearth the science behind those marvels. We as a club conduct various cultural programs, guest lectures, interactive sessions and hands on workshops to wrest the love for history and heritage. Our club is a rendezvous of like minded enthusiasts who wish to explore our scientific past and unravel the mysteries that the rocks and bricks have concealed beneath them for centuries.
                 </div>
             </div>
         </div>
 
+        <!-- EVENT DIV -->
+
         <div id="Event_Wrapper">
             <div id="EventInfo">
-                <h3 id="Event">
+                <h3 data-aos="fade-up" id="Event">
                     EVENTS
                 </h3>
-                <h1 id="WhatWeDo" style="margin-top: 2rem;">
+                <h1 data-aos="fade-up" id="WhatWeDo" style="margin-top: 2rem; color:#fff">
                     What we Do.
                 </h1>
-                <div id="EventContent">
-                    LOREM IPSUM DOLOR LOREM IPSUM DOLOR LOREM IPSUM DOLOR LOREM IPSUM DOLOR LOREM IPSUM DOLOR LOREM IPSUM DOLOR LOREM IPSUM DOLOR LOREM IPSUM DOLOR LOREM IPSUM DOLOR LOREM IPSUM DOLOR LOREM IPSUM DOLOR LOREM IPSUM DOLOR LOREM IPSUM DOLOR LOREM IPSUM DOLOR LOREM IPSUM DOLOR LOREM IPSUM DOLOR LOREM IPSUM DOLOR LOREM IPSUM DOLOR LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM.
+                <div data-aos="fade-up" id="EventContent">
+                    We follow the motto of learning from the past specifically, in 
+                    construction modeling and structuring fields.We analyze the ancient and 
+                    medieval techniques and materials.
                 </div>
             </div>
 
-            <div id="EventListRow1">
+            <!-- EVENT LIST ROW 1 -->
+
+            <div data-aos="fade-up" id="EventListRow1">
+
+                <!-- EVENT 1 -->
+
                 <div id="Event1">
                     <div id="EventLogo">
                         <i id="temp" class="fa fa-chalkboard-teacher"></i>
@@ -159,7 +192,11 @@
             </div>
 
             <!-- EVENT LIST ROW 2 -->
-            <div id="EventListRow2">
+
+            <div data-aos="fade-up"  id="EventListRow2">
+
+                <!-- EVENT 1 -->
+
                 <div id="Event1">
                     <div id="EventLogo">
                         <i id="temp" class="fa fa-pencil-ruler"></i>
@@ -176,6 +213,7 @@
                 </div>
 
                 <!-- Event 2 -->
+
                 <div id="Event2">
                     <div id="EventLogo">
                         <i class="fas fa-laptop-code"></i>
@@ -193,49 +231,590 @@
             </div>
         </div>
 
+        <!-- GALLERY DIV-->
+
         <div id="Gallery_Wrapper">
             <div id="GalleryIntro">
-                <div id="GalleryTitle">
+                <div data-aos="fade-up" id="GalleryTitle">
                     <h1>GALLERY</h1>
                 </div>
-                <div style="margin-top:2rem;color: rgba(255,255,255,0.5)" id="GalleryAbt">
+                <div data-aos="fade-up" style="margin-top:2rem;color: rgba(255,255,255,0.5)" id="GalleryAbt">
                     <h4>Heritage Club hosts a range of events.</h4> 
                 </div>
             </div>
+
+            <!-- GALLERY ROW 1 -->
+
             <div id="GalleryRow1">
-                <div id="Img1" class="hightlight">
+                <div data-aos="fade-up" id="Img1" class="hightlight">
                     <img id="img1" src="./assets/Gallery/55704619_337588913535393_1268845356280446976_n.jpg">
-                    <div id="ImgWrapper">
+                    <!-- <div id="ImgWrapper">
 
-                    </div>
+                    </div> -->
                 </div>
-                <div id="Img2">
+                <div data-aos="fade-up" id="Img2">
                     <img id="img2" src="./assets/Gallery/WhatsApp Image 2021-04-30 at 12.33.30 AM.jpeg">
-                    <div id="ImgWrapper1">
+                    <!-- <div id="ImgWrapper1">
 
-                    </div>
+                    </div> -->
                 </div>
             </div>
+
+            <!-- GALLERY ROW 2 -->
+
             <div id="GalleryRow2">
-                <div id="Img1">
+                <div data-aos="fade-up" id="Img1">
                     <img id="img1" src="./assets/Gallery/56306716_337588883535396_8155627305754951680_n.jpg" 
                     >
-                    <div id="ImgWrapper">
+                    <!-- <div id="ImgWrapper">
 
-                    </div>
+                    </div> -->
                 </div>
-                <div id="Img2">
+                <div data-aos="fade-up" id="Img2">
                     <img id="img2"  src="./assets/Gallery/WhatsApp Image 2021-04-30 at 12.33.31 AM.jpeg">
-                    <div id="ImgWrapper1">
+                    <!-- <div id="ImgWrapper1">
 
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
-        <div>
-            <!-- sduigbwergbuweiurbgwergewrgobiwergbuweirwbeiurbgwelrgbwerubgweuribgewiurbgewruibgwerugibwerogubqepfibwprgbuepr9gbwerpgbupewrgubewrguewbrpgwebgr -->
+
+        <!-- BOARD DIV -->
+
+        <div id="Board_Wrapper">
+            <div id="overlay">
+            <div data-aos="fade-up" id="BoardTitle">
+                <h1>Our Team.</h1>
+            </div>
+            
+            <!-- Board Row 1 -->
+
+            <div id="BoardRow1" class="BoardRow">
+
+                <!-- Member 1 Row 1 -->
+
+                <div data-aos="fade-up" class="member" id="member1">
+                    <div id="Board_img" onmouseenter="perform(this)" onmouseleave="leave(this)">
+                        <figure>
+                            <img id="Board_member" class="Board_member"
+                             src="./assets/Board Members/pradeep.png" width="200">
+                        </figure>
+
+                        <div style="display: none;" class="Board_img_wrapper">
+
+                        </div>
+                        <div class="Member_Details">
+                            <div style="display: none;" class="Phone_No">
+                                <a href="Tel:
+                                9502506142">
+                                9502506142            </a>
+                            </div>
+
+                            <div style="display: none;" class="Member_social">
+                                <a href="mailto:kh.pradeepreddy2018@vitstudent.ac.in">
+                                    <i class="fa fa-envelope"></i>
+                                </a>
+                                <a href="https://www.facebook.com/pradeepkapureddy" target="_blank">
+                                    <i class="fa fa-facebook-square"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/pradeep-reddy-kh-ab664a150" target="_blank">
+                                    <i class="fa fa-linkedin-square"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="Board_desc">
+                        <div id="Member_Name">
+                            PRADEEP
+                        </div>
+                        <div id="Member_Post">
+                            CHAIRPERSON 1
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MEMBER 2 Row 1 -->
+
+                <div data-aos="fade-up" class="member" id="member2">
+                    <div id="Board_img" onmouseenter="perform(this)" onmouseleave="leave(this)">
+                        <figure>
+                            <img id="Board_member" class="Board_member"
+                             src="./assets/Board Members/tanmay1.jpeg">
+                        </figure>
+
+                        <div style="display: none;" class="Board_img_wrapper">
+
+                        </div>
+                        <div class="Member_Details">
+                            <div style="display: none;" class="Phone_No">
+                                <a href="Tel:
+                                7622929865">
+                                7622929865            </a>
+                            </div>
+
+                            <div style="display: none;" class="Member_social">
+                                <a href="mailto:tanmay.pati2018@vitstudent.ac.in">
+                                    <i class="fa fa-envelope"></i>
+                                </a>
+                                <a href="https://www.facebook.com/tanmy4u" target="_blank">
+                                    <i class="fa fa-facebook-square"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/tanmaypati" target="_blank">
+                                    <i class="fa fa-linkedin-square"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="Board_desc">
+                        <div id="Member_Name">
+                            TANMAY
+                        </div>
+                        <div id="Member_Post">
+                            CHAIRPERSON 2
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Board Row 2 -->
+
+            <div id="BoardRow2" class="BoardRow">
+                <!-- Member 1 row 2 -->
+                
+                <div data-aos="fade-up" class="member" id="member1">
+                    <div id="Board_img" onmouseenter="perform(this)"
+                    onmouseleave="leave(this)">
+                        <figure>
+                            <img id="Board_member" class="Board_member"
+                             src="./assets/Board Members/prashasti.jpg">
+                        </figure>
+
+                        <div style="display: none;" class="Board_img_wrapper">
+
+                        </div>
+                        <div class="Member_Details">
+                            <div style="display: none;" class="Phone_No">
+                                <a href="Tel:
+                                9003783081">
+                                9003783081            </a>
+                            </div>
+
+                            <div style="display: none;" class="Member_social">
+                                <a href="mailto:prashasti.saxena2018@vitstudent.ac.in">
+                                    <i class="fa fa-envelope"></i>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <i class="fa fa-facebook-square"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/prashasti-saxena-3b8a631a4" target="_blank">
+                                    <i class="fa fa-linkedin-square"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="Board_desc">
+                        <div id="Member_Name">
+                            PRASHASTI
+                        </div>
+                        <div id="Member_Post">
+                            SECRETARY 1
+                        </div>
+                    </div>
+                </div> 
+
+                <!-- Member 2 row 2 -->
+
+                <div data-aos="fade-up" class="member" id="member2">
+                    <div id="Board_img" onmouseenter="perform(this)"
+                    onmouseleave="leave(this)">
+                        <figure>
+                            <img id="Board_member" class="Board_member"
+                             src="./assets/Board Members/ruchita.jpeg">
+                        </figure>
+
+                        <div style="display: none;" class="Board_img_wrapper">
+
+                        </div>
+                        <div class="Member_Details">
+                            <div style="display: none;" class="Phone_No">
+                                <a href="Tel:
+                                9003749353">
+                                9003749353            </a>
+                            </div>
+
+                            <div style="display: none;" class="Member_social">
+                                <a href="mailto:Ruchita.damodar2018@vitstudent.ac.in">
+                                    <i class="fa fa-envelope"></i>
+                                </a>
+                                <a href="https://www.facebook.com/ruchita.damodar">
+                                    <i class="fa fa-facebook-square"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/ruchita-damodar-b77253172/">
+                                    <i class="fa fa-linkedin-square"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="Board_desc">
+                        <div id="Member_Name">
+                            RUCHITA
+                        </div>
+                        <div id="Member_Post">
+                            SECRETARY 2
+                        </div>
+                    </div>
+                </div> 
+            </div>
+
+            <!-- Board Row 3 -->
+            <div id="BoardRow3" class="BoardRow">
+
+                <!-- Member 1 row 3 -->
+                <div data-aos="fade-up" class="member" id="member1">
+                    <div id="Board_img" onmouseenter="perform(this)"
+                    onmouseleave="leave(this)">
+                        <figure>
+                            <img id="Board_member" class="Board_member"
+                             src="./assets/Board Members/4.jpg">
+                        </figure>
+
+                        <div style="display: none;" class="Board_img_wrapper">
+
+                        </div>
+                        <div class="Member_Details">
+                            <div style="display: none;" class="Phone_No">
+                                <a href="Tel:
+                                7488004695">
+                                7488004695            </a>
+                            </div>
+
+                            <div style="display: none;" class="Member_social">
+                                <a href="#">
+                                    <i class="fa fa-envelope"></i>
+                                </a>
+                                <a href="">
+                                    <i class="fa fa-facebook-square"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/abhishek-singh-7a400b17b/" target="_blank">
+                                    <i class="fa fa-linkedin-square"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="Board_desc">
+                        <div id="Member_Name">
+                            ABHISHEK
+                        </div>
+                        <div id="Member_Post">
+                            MEDIA AND MARKETING HEAD
+                        </div>
+                    </div>
+                </div> 
+
+                <!-- Member 2 row 3 -->
+                <div data-aos="fade-up" class="member" id="member2">
+                    <div id="Board_img" onmouseenter="perform(this)"
+                    onmouseleave="leave(this)">
+                        <figure>
+                            <img id="Board_member" class="Board_member"
+                             src="./assets/Board Members/aarsh.jpeg">
+                        </figure>
+
+                        <div style="display: none;" class="Board_img_wrapper">
+
+                        </div>
+                        <div class="Member_Details">
+                            <div style="display: none;" class="Phone_No">
+                                <a href="Tel:
+                                7096343266">
+                                7096343266            </a>
+                            </div>
+
+                            <div style="display: none;" class="Member_social">
+                                <a href="#">
+                                    <i class="fa fa-envelope"></i>
+                                </a>
+                                <a href="https://www.facebook.com/aarsh.nanavati.7" target="_blank">
+                                    <i class="fa fa-facebook-square"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/aarsh-nanavati-66b69515a/" target="_blank">
+                                    <i class="fa fa-linkedin-square"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="Board_desc">
+                        <div id="Member_Name">
+                            AARSH
+                        </div>
+                        <div id="Member_Post">
+                            FINANCE AND EDITORIAL HEAD
+                        </div>
+                    </div>
+                </div> 
+
+                <!-- Member 3 row 3 -->
+
+                <div data-aos="fade-up" class="member" id="member3">
+                    <div id="Board_img" onmouseenter="perform(this)"
+                    onmouseleave="leave(this)">
+                        <figure>
+                            <img id="Board_member" class="Board_member"
+                             src="./assets/Board Members/jigyasa.jpeg">
+                        </figure>
+
+                        <div style="display: none;" class="Board_img_wrapper">
+
+                        </div>
+                        <div class="Member_Details">
+                            <div style="display: none;" class="Phone_No">
+                                <a href="Tel:
+                                8929271998">
+                                8929271998            </a>
+                            </div>
+
+                            <div style="display: none;" class="Member_social">
+                                <a href="mailto:jigyasa.kumar2018@vitstudent.ac.in">
+                                    <i class="fa fa-envelope"></i>
+                                </a>
+                               
+                                <a href="https://www.linkedin.com/in/jigyasa-kumar-236260177">
+                                    <i class="fa fa-linkedin-square"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="Board_desc">
+                        <div id="Member_Name">
+                            JIGYASA
+                        </div>
+                        <div id="Member_Post">
+                            RESEARCH HEAD
+                        </div>
+                    </div>
+                </div> 
+            </div>
+
+
+
+        <!---------- Board Row 4 ------------->
+        <div id="BoardRow4" class="BoardRow">
+
+            <!-- Member 1 row 4 -->
+            <div data-aos="fade-up" class="member" id="member1">
+                <div id="Board_img" onmouseenter="perform(this)"
+                onmouseleave="leave(this)">
+                    <figure>
+                        <img id="Board_member" class="Board_member"
+                         src="./assets/Board Members/4.jpg">
+                    </figure>
+
+                    <div style="display: none;" class="Board_img_wrapper">
+
+                    </div>
+                    <div class="Member_Details">
+                        <div style="display: none;" class="Phone_No">
+                            <a href="Tel:
+                            9176844636">
+                            9176844636            </a>
+                        </div>
+
+                        <div style="display: none;" class="Member_social">
+                            <a href="mailto:prathik.pugazhenthi2018@vitstudent.ac.in">
+                                <i class="fa fa-envelope"></i>
+                            </a>
+                            <a href="https://www.facebook.com/prathik.pugazhenthi/" target="_blank">
+                                <i class="fa fa-facebook-square"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/prathik-pugazhenthi-487855177/" target="_blank">
+                                <i class="fa fa-linkedin-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="Board_desc">
+                    <div id="Member_Name">
+                        PRATHIK
+                    </div>
+                    <div id="Member_Post">
+                        WEB DEVELOPMENT HEAD
+                    </div>
+                </div>
+            </div> 
+
+            <!-- Member 2 row 4 -->
+
+            <div data-aos="fade-up" class="member" id="member2">
+                <div id="Board_img" onmouseenter="perform(this)"
+                onmouseleave="leave(this)">
+                    <figure>
+                        <img id="Board_member" class="Board_member"
+                         src="./assets/Board Members/raaj.jpeg">
+                    </figure>
+
+                    <div style="display: none;" class="Board_img_wrapper">
+
+                    </div>
+                    <div class="Member_Details">
+                        <div style="display: none;" class="Phone_No">
+                            <a href="Tel:
+                            9198421705">
+                            9198421705            </a>
+                        </div>
+
+                        <div style="display: none;" class="Member_social">
+                            <a href="#">
+                                <i class="fa fa-envelope"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-facebook-square"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-linkedin-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="Board_desc">
+                    <div id="Member_Name">
+                        RAJ DUBEY
+                    </div>
+                    <div id="Member_Post">
+                        TECHNICAL HEAD
+                    </div>
+                </div>
+            </div> 
+
+            <!-- Member 3 row 4 -->
+
+            <div data-aos="fade-up" class="member end" id="member3">
+                <div id="Board_img" onmouseenter="perform(this)"
+                onmouseleave="leave(this)">
+                    <figure>
+                        <img id="Board_member" class="Board_member"
+                         src="./assets/Board Members/4.jpg">
+                    </figure>
+
+                    <div style="display: none;" class="Board_img_wrapper">
+
+                    </div>
+                    <div class="Member_Details">
+                        <div style="display: none;" class="Phone_No">
+                            <a href="Tel:
+                            9003543982">
+                            9003543982    
+                           </a>
+                        </div>
+
+                        <div style="display: none;" class="Member_social">
+                            <a href="#">
+                                <i class="fa fa-envelope"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-facebook-square"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-linkedin-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="Board_desc">
+                    <div id="Member_Name">
+                        PRAMOD
+                    </div>
+                    <div id="Member_Post">
+                        DESIGN HEAD
+                    </div>
+                </div>
+            </div> 
         </div>
+        </div>
+        </div>
+
+        <!-- FOOTER DIV -->
+        <div id="footer">
+            <div id="row">
+                <div data-aos="fade-up" id="ClubTagline">
+                    <div class="Heading FirstFooter">
+                        <h4>HERITAGE CLUB, VIT VELLORE.</h4>
+                    </div>
+                    <div id="Tagline">
+                        <div >
+                            Inherit The Heritage
+                        </div>
+                    </div>
+                </div>
+                
+                <div data-aos="fade-up" id="FollowClub">
+                    <div class="Heading Mediatop">
+                        <h4>FOLLOW US.</h4>    
+                    </div>
+                    <div>
+                        <ul>
+                            <a href="https://www.instagram.com/heritageclubvit" target="_blank">
+                                <li>Instagram</li>
+                            </a>
+                            <a href="https://www.facebook.com/heritageclubvit" target="_blank">
+                                <li>Facebook</li>
+                            </a>
+                            <a href="https://www.linkedin.com/company/heritage-club-vit/" target="_blank">
+                                <li>LinkedIn</li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div data-aos="fade-up" id="Subscribe">
+                    <div class="Heading Mediatop">
+                        <h4>GET NOTIFIED.</h4>
+                    </div>
+                    <div id="notified">
+                        <div id="content">
+                            Get latest updates of activities of Heritage.
+                        </div>
+                        <div  id="SubscribeForm">
+                            <form method="POST">
+                                <div>
+                                    <input type="email" placeholder="type email" required >
+                                </div>
+                                <div>
+                                    <button type="submit">
+                                        <i class="far fa-envelope"></i>
+                                    </button>
+                                </div>
+                          </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Copyrights">
+                With love <a href="">
+                    <span> Heritage Club, VIT Vellore</span>
+                </a>
+                </span>
+            </div>
+        </div>
+
     </body>
-    <script src="./jquery-3.5.0.min.js"></script>
+    <script>
+        AOS.init({
+            duration:500,
+            offset:120,
+            easing:"ease-in-out"
+        })
+    </script>
+    <script src="./jquery-3.6.0.js"></script>
     <script src="./script.js"></script>
 </html>
