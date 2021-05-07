@@ -12,6 +12,15 @@
         abt.scrollIntoView();
     }
     
+    function exitPreloader(){
+        var preloader = document.getElementById('preloader');
+        var body = document.getElementById('body');
+        var circle = document.getElementById('circle');
+        preloader.style.display= 'none';
+        circle.style.display = 'none';
+        body.style.overflow = '';
+    }
+
     function perform(that){
         console.log("inside 1",that.id,that.className);
         var imgWrap = $(".Board_img_wrapper",that);
@@ -79,7 +88,7 @@ function scrollEvent(){
     }
 }
 
-function goUp(){
+function ScrollUp(){
     var up = document.getElementById("up");
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
