@@ -21,7 +21,6 @@ html{
     width: 10px;
 }
 
-
 ::-webkit-scrollbar-track{
     background-color: #fff;
 }
@@ -58,9 +57,11 @@ body{
     border-radius: 50%;
     background-color: blueviolet;
     z-index: 9999999;
-    transform: translateZ(20deg);
     position: absolute;
     animation: loader 1s ease-in-out 0s infinite normal forwards;
+    -webkit-animation: loader 1s ease-in-out 0s infinite normal forwards;
+    -moz-animation: loader 1s ease-in-out 0s infinite normal forwards;
+    -o-animation: loader 1s ease-in-out 0s infinite normal forwards;
 }
 
 #borderCircle1{
@@ -70,8 +71,13 @@ body{
     position: absolute;
     z-index: 9999999;
     background-image: linear-gradient(blueviolet,violet);
-    transform: translateZ(20deg);
+    background-image: -webkit-linear-gradient(blueviolet,violet);
+    background-image: -moz-linear-gradient(blueviolet,violet);
+    background-image: -o-linear-gradient(blueviolet,violet);
     animation: loader2 1s ease-in-out 0ms infinite normal forwards;
+    -webkit-animation: loader2 1s ease-in-out 0s infinite normal forwards;
+    -moz-animation: loader2 1s ease-in-out 0s infinite normal forwards;
+    -o-animation: loader2 1s ease-in-out 0s infinite normal forwards;
 }
 
 #borderCircle{
@@ -81,27 +87,37 @@ body{
     position: absolute;
     z-index: 9999999;
     background-image: linear-gradient(blueviolet,violet);
-    transform: translateZ(20deg);
+    background-image: -webkit-linear-gradient(blueviolet,violet);
+    background-image: -moz-linear-gradient(blueviolet,violet);
+    background-image: -o-linear-gradient(blueviolet,violet);
     animation: loader1 1s ease-in-out 0ms infinite normal forwards;
+    -webkit-animation: loader1 1s ease-in-out 0s infinite normal forwards;
+    -moz-animation: loader1 1s ease-in-out 0s infinite normal forwards;
+    -o-animation: loader1 1s ease-in-out 0s infinite normal forwards;
 }
 
-/* #circle{
-    width: 10%;
-    height: 25%;
-    position: absolute;
-    border-radius: 50%;
-    background-color: blueviolet;
-    z-index: 99999999999999;
-    animation: loader 1s ease-in-out 0ms infinite normal forwards;
-} */
-
-@keyframes loader{
+@-webkit-keyframes loader{
+    0%{width: 10px;height: 10px;opacity: 0.2;}
+    100%{width: 90px;height: 90px;opacity: 0.7;}
+}
+@-moz-keyframes loader{
     0%{
         width: 10px;
         height: 10px;
         opacity: 0.2;
     }
-    
+    100%{
+        width: 90px;
+        height: 90px;
+        opacity: 0.7;
+    } 
+}
+@-o-keyframes loader{
+    0%{
+        width: 10px;
+        height: 10px;
+        opacity: 0.2;
+    }
     100%{
         width: 90px;
         height: 90px;
@@ -109,7 +125,34 @@ body{
     }
 }
 
-@keyframes loader2{
+
+@-webkit-keyframes loader2{
+    0%{
+        width: 10px;
+        height: 10px;
+        opacity: 0.2;
+    }
+    
+    100%{
+        width: 80px;
+        height: 80px;
+        opacity: 0.7;
+    }
+}
+@-moz-keyframes loader2{
+    0%{
+        width: 10px;
+        height: 10px;
+        opacity: 0.2;
+    }
+    
+    100%{
+        width: 80px;
+        height: 80px;
+        opacity: 0.7;
+    }
+}
+@-o-keyframes loader2{
     0%{
         width: 10px;
         height: 10px;
@@ -124,7 +167,33 @@ body{
 }
 
 
-@keyframes loader1{
+@-webkit-keyframes loader1{
+    0%{
+        width: 10px;
+        height: 10px;
+        opacity: 0.2;
+    }
+    
+    100%{
+        width: 100px;
+        height: 100px;
+        opacity: 0.7;
+    }
+}
+@-moz-keyframes loader1{
+    0%{
+        width: 10px;
+        height: 10px;
+        opacity: 0.2;
+    }
+    
+    100%{
+        width: 100px;
+        height: 100px;
+        opacity: 0.7;
+    }
+}
+@-o-keyframes loader1{
     0%{
         width: 10px;
         height: 10px;
@@ -142,7 +211,6 @@ body{
 #Landing-wrapper{
     background-image: url("./assets/setu-chhaya-4hlgFBv6IrM-unsplash.jpg");
     background-attachment: fixed;
-    
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -449,6 +517,10 @@ body{
     -o-transition: ease-in-out 0.5s;
 }
 
+#sn{
+    color: #a6a6a6;
+}
+
 .hide{
     -webkit-transition-delay: 0ms;
     -moz-transition-delay: 0ms;
@@ -459,8 +531,9 @@ body{
     display: none;
 }
 
-#slide_nav li:hover{
+#sn:hover{
     color: white;
+    cursor: pointer;
 }
 
 #slide_nav li a:hover{

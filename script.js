@@ -6,12 +6,25 @@
         $("#slide_nav_div").toggleClass("hide");
     });
     
-    function scroll(){
-        // var explore = document.getElementById("Explore");
-        var abt = document.getElementById("AboutUs");
-        abt.scrollIntoView();
+   
+    $(".my-btn").click(() => {
+        var abt = document.getElementById('AboutUs');
+        abt.scrollIntoView(true);
+    });
+
+    function scrollToDiv(that){
+        var abt = document.getElementById('AboutUs');
+        var events = document.getElementById("Event_Wrapper");
+        var gallery = document.getElementById("Gallery_Wrapper");
+        var board = document.getElementById("Board_Wrapper");
+        var footer = document.getElementById("footer");
+        var classes = ['abt','events','gallery','board','footer'];
+        var targetDiv = [abt,events,gallery,board,footer];
+        var target = that.getAttribute("class");
+        var idx = classes.indexOf(target);
+        targetDiv[idx].scrollIntoView(true);
     }
-    
+
     function exitPreloader(){
         var preloader = document.getElementById('preloader');
         var body = document.getElementById('body');
@@ -44,8 +57,6 @@
         $(social).slideUp(500);
         
     }
-
-    
 
     $("#Board_img").on({
         mouseenter: () => {

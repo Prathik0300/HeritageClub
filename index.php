@@ -1,4 +1,4 @@
-<!-- <?php
+<?php
 // require_once "pdo.php";
 // if(isset($_POST['mail'])){
 //     $sql = "INSERT INTO subscription(email) VALUES (:mail)";
@@ -9,7 +9,7 @@
 //     header("Location: index.php");
 //     return;
 // }
-?> -->
+?> 
 
 <!DOCTYPE html>
 <html lang="en">
@@ -19,6 +19,7 @@
         <link rel="shortcut icon" href="./assets/heritage.png" type="image/x-icon">
 
         <!-- basic meta tags -->
+
         <meta charset="utf-8">
         <meta name="description" content="Heritage club is a rendezvous of like minded enthusiasts who wish to explore the scientific past of our noble land.
         Our objectives include conducting various cultural events, site visits, research work and hands on workshops to wrest the love for our heritage.">
@@ -53,7 +54,7 @@
         <meta property="twitter:title" content="Heritage Club VIT Vellore">
         <meta property="twitter:image" content="/assets/heritage.png">
         <meta property="twitter:url" content="https://www.heritagevit.com">
-        <meta property="twitter:description" content="Heritage club is a rendezvous of like minded enthusiasts who wish to explore the scientific past of our noble land.Our objectives include conducting various cultural events, site visits, research work and hands on workshops to wrest the love for our heritage.">
+        <meta property="twitter:description" content="Heritage club is a rendezvous of like minded enthusiasts who wish to explore the scientific past of our noble land.Our objectives include conducting various cultural events, site visits, research work and hands on workshops to wrest the love for our heritage."> 
 
         <!-- Mobile specific metas -->
 
@@ -117,12 +118,10 @@
                 <!-- EXPLORE BUTTON -->
     
                 <div id="Explore_btn_div">
-                    <a href="#AboutUs">
-                        <div onclick="scroll()"  class="my-btn">
+                        <div class="my-btn">
                             <div id="Explore" class="side pro-side default-side">EXPLORE</div>
                             <div  class="side pro-side hover-side">EXPLORE</div>
                         </div>
-                    </a>
                 </div>
     
                 <!-- SOCIAL MEDIA HANDLES -->
@@ -148,20 +147,20 @@
                         <li style="cursor:default;">
                             <h1>Heritage.</h1>
                         </li>
-                        <li>
-                            <a href="#AboutUs">About</a>
+                        <li id="sn" class="abt" onclick="scrollToDiv(this)">
+                            About
                         </li>
-                        <li>
-                            <a href="#Event_Wrapper">Events</a>
+                        <li id="sn" class="events" onclick="scrollToDiv(this)">
+                            Events
                         </li>
-                        <li>
-                            <a href="#Gallery_Wrapper">Gallery</a>
+                        <li id="sn" class="gallery" onclick="scrollToDiv(this)">
+                            Gallery
                         </li>
-                        <li>
-                            <a href="#Board_Wrapper">Board</a>
+                        <li id="sn" class="board" onclick="scrollToDiv(this)">
+                            Board
                         </li>
-                        <li>
-                            <a href="#footer">Contact Us</a>
+                        <li id="sn" class="footer" onclick="scrollToDiv(this)">
+                            Contact Us
                         </li>
                     </ul>
                 </div>
