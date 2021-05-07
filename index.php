@@ -1,14 +1,14 @@
 <?php
-// require_once "pdo.php";
-// if(isset($_POST['mail'])){
-//     $sql = "INSERT INTO subscription(email) VALUES (:mail)";
-//     $stmt = $pdo->prepare($sql);
-//     $stmt->execute(array(
-//         ':mail'=>$_POST['mail']
-//     ));
-//     header("Location: index.php");
-//     return;
-// }
+require_once "pdo.php";
+if(isset($_POST['mail'])){
+    $sql = "INSERT INTO subscription(email) VALUES (:mail)";
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute(array(
+        ':mail'=>$_POST['mail']
+    ));
+    header("Location: index.php");
+    return;
+}
 ?> 
 
 <!DOCTYPE html>
@@ -353,7 +353,7 @@
                     <div id="Board_img" onmouseenter="perform(this)" onmouseleave="leave(this)">
                         <figure>
                             <img id="Board_member" class="Board_member"
-                             src="./assets/Board Members/pradeep.png" width="200">
+                             src="./assets/Board Members/pradeep.jpg" width="200">
                         </figure>
 
                         <div style="display: none;" class="Board_img_wrapper">
