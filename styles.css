@@ -34,11 +34,11 @@ html{
 }
 
 body{
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    -ms-flex-direction: column;
-    max-height: 100%;
-    max-width: 100%;
+    -ms-flex-direction: column; */
+    min-height: 100%;
+    min-width: 100%;
 }
 
 #preloader{
@@ -421,7 +421,6 @@ body{
     left:15px;
     cursor: pointer;
     background-color: white;
-    border-radius: 0px;
     -webkit-transition: ease-in-out .1s;
     -moz-transition: ease-in-out .1s;
     -o-transition: ease-in-out .1s;
@@ -723,6 +722,9 @@ body{
 #EventContent1,#EventContent2{
     font-size: 1.2rem;
     margin-top: 1rem;
+    max-width: 100%;
+    word-wrap: break-word;
+    -ms-word-wrap: break-word;
     color: #a6a6a6;
 }
 
@@ -780,7 +782,7 @@ body{
     display: flex;
     flex-direction: column;
     -ms-flex-direction: column;
-    width: 100%;
+    min-width: 100%;
     max-width: 100%;
     max-height: 100%;
     align-items: center;
@@ -1663,10 +1665,86 @@ form:focus{
     }
 }
 
-@media(max-width:540px){
+@media(max-width:450px){
+    #Landing-wrapper{
+        width: 100%;
+        
+    }
+    #up{
+        right: 2rem;
+    }
+    #AboutUs{
+        width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    #Event_Wrapper{
+        width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    #Gallery_Wrapper{
+        width: 100%;
+    }
+
+    #Board_Wrapper{
+        width: 100%;
+       
+    }
+
+    #GalleryIntro{
+        width: 100vw;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    #GalleryRow1{
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    
+    #GalleryRow2{
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    #overlay{
+        width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    #Landing-overlay{
+        width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    #footer{
+        width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
     #slide_nav_div{
         width: 45%;
     }
+
+    #social_media_handles{
+        left: -3rem;
+    }
+
+    #slide_nav_div{
+        position: fixed;
+        width: 60%;
+        height: 100vh;
+        bottom: 0;
+        margin-bottom: 0rem;
+        margin-top: 0rem;
+    }
+
 }
 
 @media(max-width:405px){
@@ -1678,6 +1756,77 @@ form:focus{
 
     #toggleButton #hamburger{
         top: 10px;
-        left: 45px;   
+        right: 100px;   
     }
+    #social_media_handles{
+        left: -3.4rem;
+    }
+}
+
+@media(max-width:375px){
+    #up{
+        right: 1.5rem;
+    }
+
+   /* #toggleButton{
+       right: 8rem;
+   } */
+   body{
+       
+       overflow-x: hidden;
+   }
+
+   #slide_nav_div{
+       min-height: 100%;
+   }
+   ::-webkit-scrollbar{
+    display: none;
+}
+
+    
+
+::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+}
+
+@media(max-width:330px){
+    #up{
+        right: 1.5rem;
+    }
+    #social_media_handles{
+        left: -3rem;
+    }
+   
+    #toggleWrapper{
+        
+    }
+    #toggleButton #hamburger{
+        right: 1000px;   
+    }
+
+   #slide_nav_div{
+       width: 80%;
+}
+   html{
+       max-width: 100%;
+       max-height: 100%;
+       overflow-x: hidden;
+   }
+
+   #club_info div h2{
+       font-size: 1rem;
+   }
+
+   #club_info div h1{
+       font-size: 1.8rem;
+   }
+
+}
+
+@media(max-width:250px){
+    #slide_nav_div{
+        width: 100%;
+        overflow-x: scroll;
+ }
 }
